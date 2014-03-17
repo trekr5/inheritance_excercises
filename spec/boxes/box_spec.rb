@@ -104,12 +104,12 @@ describe Box do
         box
       end
       it "returns the stored item" do
-        stored_item = box.retrieve
+        stored_item = subject.retrieve
         stored_item.should eq biscuit
       end
       it "makes the box empty" do
-        box.retrieve
-        box.should be_empty
+        subject.retrieve
+        subject.should be_empty
       end
     end
   end
